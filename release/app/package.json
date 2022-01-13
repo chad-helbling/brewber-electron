@@ -1,0 +1,16 @@
+{
+  "name": "brewber",
+  "productName": "brewber",
+  "version": "1.0",
+  "description": "Brewing interface for microcontroller temperature sensor and control relays",
+  "main": "./dist/main/main.js",
+  "author": {
+    "name": "Chad Helbling"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
+    "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.js",
+    "postinstall": "npm run electron-rebuild && npm run link-modules"
+  },
+  "license": "MIT"
+}
